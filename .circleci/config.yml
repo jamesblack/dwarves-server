@@ -4,6 +4,7 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:10
+      - image: google/cloud-sdk
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -29,7 +30,10 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn build
-
       # run tests!
-      - run: yarn test
+      # - run: yarn test
+      - run: |
+          echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
+          gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
+
+      - run: yarn deploy
