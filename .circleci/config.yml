@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: launcher.gcr.io/google/nodejs
+      - image: boiyaa/google-cloud-sdk-nodejs
       - image: google/cloud-sdk
 
       # Specify service dependencies here if necessary
