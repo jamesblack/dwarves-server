@@ -6,7 +6,8 @@ const GOOGLE_CONSUMER_KEY =
   '324649783869-c48b5rs1sk8hptarma3o7p4o95t5564a.apps.googleusercontent.com'
 const GOOGLE_CONSUMER_SECRET = 'qPi8t8-JdkVcIbgD0UuyhTsf'
 const OAUTH_CALLBACK_URL =
-  process.env.OAUTH_CALLBACK_URL || 'http://localhost:3000/auth/google/callback'
+  process.env.OAUTH_CALLBACK_URL ||
+  'http://localhost:3001/api/auth/google/callback'
 
 passport.use(
   new OAuth2Strategy(
