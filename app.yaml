@@ -1,0 +1,4 @@
+runtime: nodejs10
+env_variables:
+  OAUTH_CALLBACK_URL: 'https://dwarves-system.appspot.com/api/auth/google/callback'
+  USE_MEMORY_STORE: 'true'

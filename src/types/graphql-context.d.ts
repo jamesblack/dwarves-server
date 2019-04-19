@@ -1,0 +1,3 @@
+interface GraphQLContext {
+  user: any;
+}
