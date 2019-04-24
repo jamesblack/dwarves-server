@@ -3,8 +3,8 @@ import { OAuth2Strategy } from 'passport-google-oauth'
 import { Express } from 'express'
 
 const GOOGLE_CONSUMER_KEY =
-  '324649783869-c48b5rs1sk8hptarma3o7p4o95t5564a.apps.googleusercontent.com'
-const GOOGLE_CONSUMER_SECRET = 'qPi8t8-JdkVcIbgD0UuyhTsf'
+  '674672284303-85da059q3s5cn8op3vrt11vhkv0l21n1.apps.googleusercontent.com'
+const GOOGLE_CONSUMER_SECRET = 'z5z0UfFa7SOGvfOOAoci_945'
 const OAUTH_CALLBACK_URL =
   process.env.OAUTH_CALLBACK_URL ||
   'http://localhost:3001/api/auth/google/callback'
