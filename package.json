@@ -31,7 +31,7 @@
     "@types/graphql": "^14.2.0",
     "@types/passport": "^1.0.0",
     "@types/passport-google-oauth": "^1.0.40",
-    "apollo-server-express": "^2.4.8",
+    "apollo-server-express": "^2.14.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "connect-redis": "^3.4.1",
