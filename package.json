@@ -36,7 +36,7 @@
     "body-parser": "^1.18.3",
     "connect-redis": "^3.4.1",
     "cookie-parser": "^1.4.4",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-session": "^1.16.1",
     "graphql": "^14.2.1",
     "graphql-tools": "^4.0.4",
